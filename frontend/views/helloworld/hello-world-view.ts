@@ -6,6 +6,7 @@ import * as HelloWorldEndpoint from 'Frontend/generated/HelloWorldEndpoint.js';
 import { html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { View } from '../../views/view.js';
+import '../component/lit-rich-text-editor'
 
 @customElement('hello-world-view')
 export class HelloWorldView extends View {
@@ -20,6 +21,9 @@ export class HelloWorldView extends View {
     return html`
       <vaadin-text-field label="Your name" @value-changed=${this.nameChanged}></vaadin-text-field>
       <vaadin-button @click=${this.sayHello}>Say hello</vaadin-button>
+      <lit-rich-text-editor  @input="${(e: any) => {
+    console.log( e.detail);
+  }}"></lit-rich-text-editor>
     `;
   }
 

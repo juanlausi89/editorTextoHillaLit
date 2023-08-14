@@ -13,6 +13,7 @@
     "@hilla/generator-typescript-plugin-model": "2.1.4",
     "@hilla/generator-typescript-plugin-push": "2.1.4",
     "@hilla/generator-typescript-utils": "2.1.4",
+    "@material/mwc-icon-button": "^0.27.0",
     "@polymer/polymer": "3.5.1",
     "@vaadin/a11y-base": "24.1.4",
     "@vaadin/accordion": "24.1.4",
@@ -86,11 +87,13 @@
     "@vaadin/virtual-list": "24.1.4",
     "construct-style-sheets-polyfill": "3.1.0",
     "lit": "2.7.6",
-    "mobx": "^6.3.5"
+    "mobx": "^6.3.5",
+    "shadow-selection-polyfill": "^1.1.0"
   },
   "devDependencies": {
     "@rollup/plugin-replace": "5.0.2",
     "@rollup/pluginutils": "5.0.2",
+    "@types/node": "^20.5.0",
     "@vitejs/plugin-react": "4.0.0",
     "async": "3.2.2",
     "glob": "7.2.3",
@@ -191,7 +194,9 @@
     "@hilla/generator-typescript-plugin-backbone": "$@hilla/generator-typescript-plugin-backbone",
     "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli",
     "@vaadin/a11y-base": "$@vaadin/a11y-base",
-    "@vaadin/side-nav": "$@vaadin/side-nav"
+    "@vaadin/side-nav": "$@vaadin/side-nav",
+    "@material/mwc-icon-button": "$@material/mwc-icon-button",
+    "shadow-selection-polyfill": "$shadow-selection-polyfill"
   },
   "vaadin": {
     "dependencies": {
@@ -297,6 +302,6 @@
       "workbox-core": "7.0.0",
       "workbox-precaching": "7.0.0"
     },
-    "hash": "57a1565517dbb46ac35438fca7ecfb8300e8b5a44ce1b9357d7972cc3b1f7072"
+    "hash": "92abd8b299fd8913a97159f59e07b98ab9556176b95f3581b6c2f19ab7450958"
   }
 }
